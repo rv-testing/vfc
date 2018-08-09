@@ -15,6 +15,7 @@
     
 - name: windows ping
   hosts: all
+  become_method: runas
   gather_facts: false
   roles: 
     - vfc
