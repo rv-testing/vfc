@@ -15,7 +15,6 @@
     
 - name: windows ping
   hosts: all
-  become_method: runas
   gather_facts: false
   roles: 
     - vfc
@@ -57,7 +56,6 @@
     
 - name: Trigger firewall port -windows
   hosts: all
-  become_user: "{{ansible_user}}"
   become_method: runas
   gather_facts: true
   roles: 
