@@ -15,7 +15,7 @@
     
 - name: windows ping
   hosts: all
-  gather_facts: false
+  #gather_facts: false
   roles: 
     - vfc
   vars: 
